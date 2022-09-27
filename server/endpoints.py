@@ -20,6 +20,7 @@ CHAR_TYPE_LIST = f'/character_types/{LIST}'
 CHAR_TYPE_LIST_NM = 'character_types_list'
 CHAR_TYPE_DETAILS = f'/character_types/{DETAILS}'
 
+
 @api.route(HELLO)
 class HelloWorld(Resource):
     """
@@ -57,6 +58,7 @@ class CharacterTypeList(Resource):
         """
         return {CHAR_TYPE_LIST_NM: ctyp.get_char_types()}
 
+
 @api.route(f'{CHAR_TYPE_DETAILS}/<character_type>')
 class CharacterTypeDetails(Resource):
     """
@@ -82,3 +84,4 @@ class Endpoints(Resource):
         endpoints = ''
         # sorted(rule.rule for rule in api.app.url_map.iter_rules())
         return {"Available endpoints": endpoints}
+        
