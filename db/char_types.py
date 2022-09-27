@@ -12,4 +12,4 @@ CHAR_TYPES = {WIZARD: {"health": 7},
 
 
 def get_char_types():
-    return CHAR_TYPES
+    return list(CHAR_TYPES.key())
