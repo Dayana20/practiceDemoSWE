@@ -8,8 +8,8 @@ MAGE = 'Mage'
 
 CHAR_TYPES = {WIZARD: {"health": 7},
               WARRIOR: {"health": 7},
-              MAGE: {"health": 7}}
+              MAGE: {"health": 7}, }
 
 
 def get_char_types():
-    return list(CHAR_TYPES.key())
+    return list(CHAR_TYPES.keys())
