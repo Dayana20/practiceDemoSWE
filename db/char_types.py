@@ -6,10 +6,19 @@ WIZARD = 'Wizard'
 WARRIOR = 'Warrior'
 MAGE = 'Mage'
 
-CHAR_TYPES = {WIZARD: {"health": 7},
-              WARRIOR: {"health": 7},
-              MAGE: {"health": 7}, }
+CHAR_TYPES = {WIZARD: {"health": 7, 'magic': 10},
+              WARRIOR: {"health": 9},
+              MAGE: {"health": 6}, }
 
 
 def get_char_types():
     return list(CHAR_TYPES.keys())
+
+
+def main():
+    char_types = get_char_types()
+    print(char_types)
+
+
+if __name__ == '__main__':
+    main()
