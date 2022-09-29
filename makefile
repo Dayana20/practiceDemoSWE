@@ -16,7 +16,6 @@ all_tests: lint unit
 
 unit: FORCE
 	cd $(API_DIR); pytest $(PYTESTFLAGS)
-	pwd
 	cd $(DB_DIR); pytest $(PYTESTFLAGS)
 
 lint: FORCE

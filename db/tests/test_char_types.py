@@ -6,5 +6,5 @@ def test_get_char_types():
     assert len(ct) > 1
 
 def test_get_char_type_details():
-    ctd = ctyp.get_char_tyoe_details(ctyp.WARRIOR)
+    ctd = ctyp.get_char_type_details(ctyp.WARRIOR)
     assert isinstance(ctd, dict)
