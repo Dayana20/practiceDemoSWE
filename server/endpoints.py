@@ -3,6 +3,7 @@ This is the file containing all of the endpoints for our flask app.
 The endpoint called `endpoints` will return all available endpoints.
 """
 
+# from codecs import charmap_build
 from flask import Flask
 from flask_restx import Resource, Api
 import db.char_types as ctyp
@@ -59,16 +60,16 @@ class CharacterTypeList(Resource):
         return {CHAR_TYPE_LIST_NM: ctyp.get_char_types()}
 
 
-@api.route(f'{CHAR_TYPE_DETAILS}/<character_type>')
+@api.route(f'{CHAR_TYPE_DETAILS}/<char_type>')
 class CharacterTypeDetails(Resource):
     """
     This will get a list of character types.
     """
-    def get(self, character_type):
+    def get(self, char_type):
         """
         Returns a list of character types.
         """
-        return {character_type: {}}
+        return {char_type: ctyp.get_char_type_details(char_type)}
 
 
 @api.route('/endpoints')
