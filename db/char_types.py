@@ -18,6 +18,7 @@ def get_char_types():
 def get_char_type_details(char_type):
     return CHAR_TYPES[char_type]
 
+
 def main():
     char_types = get_char_types()
     print(char_types)
