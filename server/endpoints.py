@@ -8,6 +8,8 @@ from http import HTTPStatus
 # from codecs import charmap_build
 from flask import Flask
 from flask_restx import Resource, Api
+
+import werkzeug.exceptions as wz
 import db.char_types as ctyp
 import db.games as gm
 
@@ -32,6 +34,7 @@ USERS_NS = 'users'
 USER_LIST = f'/{USERS_NS}/{LIST}'
 USER_LIST_NM = '{USERS_NS}_list'
 USER_DETAILS = f'/{USERS_NS}/{DETAILS}'
+
 
 @api.route(HELLO)
 class HelloWorld(Resource):
