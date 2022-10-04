@@ -13,17 +13,16 @@ We will write a API-driven adventure game where characters explore a world, meet
 * List all available games
 * Get a description of a game
 
-
 ## User endspoints:
 * Signup
 * Signin
 * list all available users
 * get a description of a user
+- Delete a user
 
 ### Character type endpoints
 * list all available character types
 * get a description of a character types
-
 
 ### In-game actions
 * List all active characters
@@ -31,7 +30,6 @@ We will write a API-driven adventure game where characters explore a world, meet
 * Allow character to move
 * Allow character to act
 * Allow character to talk to other characters in locale
-
 
 ## Design
 Each of the main requirements will correspond to an API endpoint.
