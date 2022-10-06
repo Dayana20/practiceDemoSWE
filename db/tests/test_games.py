@@ -12,7 +12,7 @@ def test_get_char_type_details():
 
 def test_add_wrong_name_type():
     with pytest.raises(TypeError):
-        gm.add_game('a new game',{})
+        gm.add_game(7,{})
 
 def test_add_wrong_details_type():
     with pytest.raises(TypeError):
